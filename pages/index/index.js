@@ -82,7 +82,7 @@ Page({
             if (data.meta.code == 0) {
                 this.setData({
                     navList: data.data.items,
-                    'goods.params.type': data.data.items[activeIndex]._id
+                    'goods.params.type': data.data.items[activeIndex] && data.data.items[activeIndex]._id || ''
                 })
                 this.onPullDownRefresh()
             }

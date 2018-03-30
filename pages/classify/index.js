@@ -51,7 +51,7 @@ Page({
                     classify: classify, 
                     'prompt.hidden': classify.items.length, 
                     activeIndex: 0, 
-                    'goods.params.type': classify.items[0]._id, 
+                    'goods.params.type': classify.items[0] && classify.items[0]._id || '',
                 })
 
                 this.getGoods()
