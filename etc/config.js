@@ -3,6 +3,8 @@ export default {
 	//basePath: 'https://www.skyvow.cn/api',
 	//domain: 'https://www.skyvow.cn/',
 	// 本地环境
-	 basePath: 'http://localhost:3000/api',
-	 domain: 'http://localhost:3000/'
+	// basePath: 'http://localhost:3000/api',
+	// domain: 'http://localhost:3000/'
+	basePath: 'https://mall.luguizhou.com/api',
+	domain: 'https://mall.luguizhou.com/'
 }

@@ -79,7 +79,7 @@ Page({
         .then(res => {
             const data = res.data
             console.log(data)
-            if (data.meta.code == 0) {
+            if (data.meta && data.meta.code == 0) {
                 this.setData({
                     navList: data.data.items,
                     'goods.params.type': data.data.items[activeIndex] && data.data.items[activeIndex]._id || ''
